@@ -23,7 +23,7 @@ async function sendMail(email) {
       secure: true,
       auth: {
         type: 'OAuth2',
-        user: 'aadishjain360@gmail.com',
+        user: process.env.EMAIL,
         clientId: CLIENT_ID,
         clientSecret: CLIENT_SECRET,
         refreshToken: REFRESH_TOKEN,
