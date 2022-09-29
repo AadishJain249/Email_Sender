@@ -97,7 +97,7 @@ return `<!DOCTYPE html>
                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
                   <tr>
                      <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-                        <p style="margin: 0;text-decoration: none; padding-left:5px;">Once you have confirm that ${email} is your email address,We'll help you find your Slack Workspace or create a new one</p>
+                        <p style="margin: 0;text-decoration: none; padding-left:5px;">Once you've have confirm that ${email} is your email address,We'll help you find your Slack Workspace or create a new one</p>
                         <p><b>📱From Your Mobile Device</b>, tap the button below to confirm</p>
                      </td>
                   </tr>

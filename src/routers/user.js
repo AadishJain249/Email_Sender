@@ -8,7 +8,7 @@ route.get('/hello/',async (req,res) => {
 });
 route.post('/hello/req', async(req, res) => {
     const newUser=new User(req.body)
-    await sendMail(req.body.email)// will send req to the
+    await sendMail(req.body.email)// will send email value to the sendMail
     newUser.save().then(() => res.json('User added!'))
     .catch(err => res.status(400).json('Error: ' + err));
 });

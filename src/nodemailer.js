@@ -31,9 +31,9 @@ async function sendMail(email) {
       },
     });
     const mailOptions = {
-      from: 'AadishJain <aadishjain360@gmail.com>',
-      to: email,
-      subject: 'Mail Api',
+      from: process.env.EMAIL, // your mail id
+      to: email, // recevier mail
+      subject: 'Mail',
       text: 'Welcome here!',
       html: demo(email),
     };
