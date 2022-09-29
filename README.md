@@ -16,8 +16,6 @@
 </div>
 
 * Now authorize the API and exchange the Authorization code for a refresh token.
-* Make a config file saving the username and password of the GMail account from which u want to send the E-Mail and also save the client ID, client secret and refresh token.
-* Now in the receivers.json file edit the subject and the receivers property and edit the demoTemplate located inside the template folder under src to use your own E-Mail Template.
 * Now write **npm init** to install the required modules and then **node app.js** and you are done.
 
 ![image](https://user-images.githubusercontent.com/87666139/193126822-ac903071-1f9b-4298-a992-eb04131f73a8.png)
