@@ -1,5 +1,3 @@
-
-const u=require('../../template')
 const {sendMail}=require('../nodemailer')
 const express =require('express')
 const route=new express.Router()
@@ -8,7 +6,6 @@ const sendmail=require('../nodemailer')
 route.get('/hello/',async (req,res) => {
     res.send(req.user);
 });
-let emailnew="aadi"
 route.post('/hello/req', async(req, res) => {
     const newUser=new User(req.body)
     await sendMail(req.body.email)// will send req to the

@@ -30,7 +30,6 @@ async function sendMail(email) {
         accessToken: accessToken,
       },
     });
-    
     const mailOptions = {
       from: 'AadishJain <aadishjain360@gmail.com>',
       to: email,
@@ -38,7 +37,6 @@ async function sendMail(email) {
       text: 'Welcome here!',
       html: demo(email),
     };
-
     const result = await transport.sendMail(mailOptions);
     return result;
   } catch (error) {
@@ -46,7 +44,6 @@ async function sendMail(email) {
     return error;
   }
 }
-
 // sendMail()
   // .then((result) => console.log('Email sent...', result))
   // .catch((error) => console.log(JSON.stringify(error.message)))
