@@ -1,6 +1,5 @@
 // mongo schema
 const mongo=require('mongoose')
-const validator=require('validator')
 const userSchema=new mongo.Schema(
     {
         userID:{
@@ -18,13 +17,6 @@ const userSchema=new mongo.Schema(
                },
         PhoneNO:{
             type:Number,
-            default:0,
-            validate(value){
-                if(value<0)
-                {
-                    throw new Error('phone no should be of 10 digits')
-                }
-            }
         },
     }
 )
